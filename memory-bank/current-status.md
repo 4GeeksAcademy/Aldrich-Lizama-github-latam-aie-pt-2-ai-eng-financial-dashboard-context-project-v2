@@ -1,6 +1,6 @@
 # Current Status — Financial Metrics Dashboard
 
-_Fecha: 2026-07-31_
+_Fecha: 2026-08-01_
 
 ---
 
@@ -32,6 +32,13 @@ _Fecha: 2026-07-31_
 - [x] **Estado vacío** — mensaje "No data available" cuando no hay datos
 - [x] **Responsive design** — Tailwind grid adaptativo (`sm:`, `xl:`, `lg:`)
 - [x] **Proxy Vite** para `/api` en desarrollo (sin CORS)
+- [x] **Accesibilidad WCAG 2.2** — skip link, aria-label, role, focus-visible, prefers-reduced-motion
+- [x] **Code splitting** — recharts (342 kB) cargado con `React.lazy()` + `Suspense`
+- [x] **Google Fonts optimizadas** — preconnect + preload + font-display swap (carga no bloqueante)
+- [x] **SEO básico** — meta description, Open Graph tags, robots meta, canonical URL
+- [x] **Structured Data** — JSON-LD Schema.org WebApplication
+- [x] **Speculation Rules API** — prerenderizado predictivo (eagerness: moderate)
+- [x] **robots.txt** — control de crawling
 
 ### Testing
 - [x] **7 tests de integración** en backend (FastAPI TestClient)
@@ -101,12 +108,15 @@ _Fecha: 2026-07-31_
 
 | Métrica | Valor |
 |---------|-------|
-| Archivos totales | ~30 |
+| Archivos totales | ~35 |
 | Líneas backend (routes.py) | 391 |
-| Líneas frontend (src/) | ~633 |
+| Líneas frontend (src/) | ~650 |
 | Tests backend | 7 (3 endpoints cubiertos) |
 | Tests frontend | 4 (solo utilidades) |
 | Endpoints API | 9 |
 | Contenedores Docker | 2 |
 | Dependencias frontend | 7 prod + 12 dev |
 | Dependencias backend | 6 |
+| Skills instaladas | 4 (accessibility, performance, seo, vercel-react-best-practices) |
+| Tamaño bundle principal (gzip) | 60 kB |
+| Tamaño recharts (gzip, lazy) | 100 kB |

@@ -18,6 +18,15 @@
 | `clsx` | 2.1.1 | Concatenación condicional de clases |
 | `tailwind-merge` | 3.5.0 | Fusión inteligente de clases Tailwind |
 
+### Rendimiento y SEO aplicado
+| Aspecto | Técnica | Detalle |
+|---------|---------|---------|
+| **Code splitting** | `React.lazy()` + `Suspense` | Recharts (342 kB) se carga bajo demanda; los charts tienen su propio chunk |
+| **Font loading** | `preconnect` + `preload` + `media="print" onload` | Inter se carga sin bloquear el renderizado inicial |
+| **Prerenderizado** | Speculation Rules API (`eagerness: moderate`) | Prerenderiza navegaciones probables tras ~200ms de hover |
+| **SEO** | Meta tags, Open Graph, JSON-LD, robots.txt | Datos estructurados Schema.org WebApplication |
+| **Proxy API** | Vite proxy a `localhost:8000` + `dns-prefetch` | Resolución DNS anticipada del backend |
+
 ### Dev Dependencies (Frontend)
 | Paquete | Versión | Uso |
 |---------|---------|-----|

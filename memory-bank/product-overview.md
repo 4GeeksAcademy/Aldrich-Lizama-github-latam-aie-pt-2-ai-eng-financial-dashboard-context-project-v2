@@ -27,7 +27,7 @@ El frontend consume estos datos y presenta:
 
 ## Estado del Proyecto
 
-Proyecto funcional en etapa de **análisis y mejora continua**. El backend y frontend se comunican correctamente, la UI es responsive con modo oscuro, y existe una base de tests tanto en backend como frontend. Se han identificado áreas de mejora documentadas en `.agents/rules/` y `memory-bank/`.
+Proyecto funcional en etapa de **análisis y mejora continua**. El backend y frontend se comunican correctamente, la UI es responsive con modo oscuro, y existe una base de tests tanto en backend como frontend. Se han aplicado mejoras de **accesibilidad WCAG 2.2**, **rendimiento** (code splitting, font loading optimizado), **SEO** (structured data, Open Graph) y **buenas prácticas React** (Vercel Engineering guidelines). Las áreas de mejora restantes están documentadas en `.agents/rules/`, `memory-bank/current-status.md` y `memory-bank/progress.md`.
 
 ## Enlaces
 
